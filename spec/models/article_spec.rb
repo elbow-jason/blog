@@ -3,7 +3,7 @@ require_relative '../spec_helper'
 
 describe Article do
 
-  # let(:article){Article.new(title: 'myTest', 
+  # let(:article){Article.new(title: 'myTest',
   #                           text: 'this is a text test')}
 
   before :each do
