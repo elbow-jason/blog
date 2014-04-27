@@ -2,12 +2,21 @@ require_relative '../spec_helper'
 
 
 describe Article do
-  let(:article){Article.new(title: 'myTest', 
-                            text: 'this is a text test')}
+
+  # let(:article){Article.new(title: 'myTest', 
+  #                           text: 'this is a text test')}
+
+  before :each do
+    article = Article.new (title: 'myTest', 
+                            text: 'this is a text test')
+  end
 
   it 'works' do
     expect(true).to be_truthy
   end
+
+
+
 
   it 'has a title longer than 5 and less than 24 chars' do 
     expect(article.title).to eq('myTest')
