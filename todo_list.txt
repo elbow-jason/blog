@@ -1,0 +1,4 @@
+todo:
+  integrate code coverage tool: simplecov
+
+  
