@@ -7,8 +7,7 @@ describe Article do
   #                           text: 'this is a text test')}
 
   before :each do
-    article = Article.new (title: 'myTest', 
-                            text: 'this is a text test')
+    @article = Article.new title: 'myTest', text: 'testicle'
   end
 
   it 'works' do
@@ -19,16 +18,16 @@ describe Article do
 
 
   it 'has a title longer than 5 and less than 24 chars' do 
-    expect(article.title).to eq('myTest')
+    expect(@article.title).to eq('myTest')
   end
 
 
   it 'has a text' do
-    expect(article.text).to eq('this is a text test')
+    expect(@article.text).to eq('testicle')
   end
 
   it 'checks strong params' do
-    article.permit?('fake_controller', 'index').to be_true
+    @article.permit?('fake_controller', 'index').to be_true
   end
 
 end
