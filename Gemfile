@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 #specify ruby version
 ruby '2.1.1'
 
+
+#enable the coffeescripts
+gem 'coffee-script'
 #rails needs dis!
 gem 'rails_12factor'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
