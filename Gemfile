@@ -39,6 +39,16 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
+group :assets do
+  gem 'sass-rails', '~> 4.0.3'
+  gem "bourbon", '~> 3.2'
+  gem 'jquery-fileupload-rails'
+end
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
